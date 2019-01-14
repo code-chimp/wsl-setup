@@ -1,4 +1,4 @@
-# WSL Setup
+# WSL Setup - Using Ubuntu 18.04
 
 ## Windows
 
