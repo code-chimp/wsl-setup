@@ -9,6 +9,21 @@ npm i -g composer-cli composer-rest-server composer-playground yo generator-hype
 # create a directory for the tools
 mkdir /c/work/hyperledger
 cd /c/work/hyperledger
+
+# running the via curl doesn't seem to work as advertised
+# pulling it local seems to get around the issue
+wget -O bootstrap.sh http://bit.ly/2ysOFE
+chmod +x bootstrap.sh
+# gets the samples and downloads docker images
+./bootstrap.sh
+# gets the binary tools
+./bootstrap.sh -d -s
+```
+
+## Add to your `.bashrc`
+```bash
+export HLF=/c/hyperledger
+export PATH=$HLF/bin:$PATH
 ```
 
 ## Chaincode w/ Golang
